@@ -1,1 +1,49 @@
-<h1> Привет, это домашняя страничка моего сайта! </h1>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <!-- Вот этот тег делает сайт адаптивным: -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой адаптивный сайт</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            /* Ограничиваем максимальную ширину на ПК, но на телефонах сайт сожмется до 90% */
+            width: 90%;
+            max-width: 800px; 
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0076ff;
+        }
+        /* Адаптивный размер шрифта для мобильных устройств */
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px auto;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Поздравляю с запуском сайта!</h1>
+        <p>Эта страница — «резиновая». Попробуйте открыть её с телефона или просто сузить окно браузера на компьютере. Блок с текстом и шрифт будут плавно подстраиваться под размер экрана.</p>
+    </div>
+
+</body>
+</html>
