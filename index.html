@@ -4,44 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мой адаптивный сайт</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        .container {
-            width: 90%;
-            max-width: 800px; 
-            margin: 50px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #0076ff;
-        }
-        video {
-            width: 100%;
-            height: auto;
-            margin-top: 20px;
-            border-radius: 8px;
-            display: block;
-            background: #000;
-        }
-        @media (max-width: 600px) {
-            .container {
-                margin: 20px auto;
-                padding: 15px;
-            }
-            h1 {
-                font-size: 24px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -49,13 +12,6 @@
         <h1>Поздравляю с запуском сайта!</h1>
         <p>Эта страница — «резиновая». Попробуйте открыть её с телефона или просто сузить окно браузера на компьютере. Блок с текстом и шрифт будут плавно подстраиваться под размер экрана.</p>
         
-        <p>
-            <a href="https://drive.google.com/file/d/12JIpG8I83aPbUejKFFJZOqtONUNdUVCz/view?usp=drivesdk" target="_blank">смотреть клип на Google Диск</a>
-        </p>
-        <p>
-            <a href="https://rutube.ru/shorts/258e166447872e0b1e259245bc4924f4/?r=wd" target="_blank">смотреть клип на Rutube</a>
-        </p>
-
         <!-- Родной HTML5-плеер, который работает везде -->
         <video controls playsinline preload="metadata">
             <source src="subota.mp4" type="video/mp4">
