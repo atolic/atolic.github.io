@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мой адаптивный сайт</title>
+    <!-- Сначала подключаем Bootstrap 5 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Затем ваши личные стили -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="bg-light">
 
-    <div class="container">
-        <h1>Поздравляю с запуском сайта!</h1>
-        <p>Эта страница — «резиновая». Попробуйте открыть её с телефона или просто сузить окно браузера на компьютере. Блок с текстом и шрифт будут плавно подстраиваться под размер экрана.</p>
-        
-        <!-- Родной HTML5-плеер, который работает везде -->
-        <video controls playsinline preload="metadata">
-            <source src="subota.mp4" type="video/mp4">
-            Ваш браузер не поддерживает встроенное видео.
-        </video>
-    </div>
+    <div class="container my-4 my-md-5">
+        <div class="card shadow-sm mx-auto" style="max-width: 800px;">
+            <div class="card-body p-3 p-md-4">
+                <h1 class="h2 text-primary mb-3">Поздравляю с запуском сайта!</h1>
+                <p class="text-body">
+                    Эта страница — «резиновая» и теперь работает на <b>Bootstrap 5</b>. Попробуйте открыть её с телефона или сузить окно браузера.
+                </p>
+                
+                                <!-- Адаптивное видео с сохранением родных пропорций -->
+                <video class="w-100 h-auto mt-3 rounded bg-dark d-block" controls playsinline preload="metadata">
+                    <source src="subota.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает встроенное видео.
+                </video>
 
+                </div>
+            </div>
+        </div>
+    
+ <!-- Скрипты Bootstrap (нужны для работы меню, вкладок, всплывающих окон) -->
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
